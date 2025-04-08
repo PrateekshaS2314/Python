@@ -35,5 +35,5 @@ def calculator():
     elif choice=="7":
         print(f"{num1} * {num2}={num1*num2}")
     else:
-        print("Invalid Output")
+        print("Invalid Input")
 calculator()
