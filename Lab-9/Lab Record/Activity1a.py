@@ -19,7 +19,10 @@ def calculator():
         else:
             print("Error! Division by 0")
     elif choice=="3":
-        print(f"{num1} % {num2}={num1%num2}")
+        if num2!=0:
+            print(f"{num1} % {num2}={num1%num2}")
+        else:
+            print("num2 must not be 0")
     elif choice=="4":
         print(f"{num1} ** {num2}={num1**num2}")
     elif choice=="5":
