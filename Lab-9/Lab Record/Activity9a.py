@@ -1,0 +1,12 @@
+import pandas as pd
+df = pd.read_csv('2salary.csv')
+description = df.describe()
+quantiles = df['Salary'].quantile([0.25,0.5,0.75])
+skewness = df['Salary'].skew()
+kurtosis = df['Salary'].kurt()
+value_count = df['Salary'].value_counts()
+print("Statical Description:\n", description)
+print("\nQuantities:", quantiles)
+print("\nSkewness:", skewness)
+print("\nKurtosis:", kurtosis)
+print("\nValue Count:", value_count)
